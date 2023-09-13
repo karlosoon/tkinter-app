@@ -16,7 +16,7 @@ def get_top_movies():
     for doc in response.json()['docs']:
         name = doc["name"]
         year = doc["year"]
-        rating = doc["rating"]["imdb"]
+        rating = doc["rating"]["kp"]
         poster_url = doc["poster"]["url"]
         description = doc["shortDescription"]
         movie_list.append([name, year, rating, poster_url, description])
