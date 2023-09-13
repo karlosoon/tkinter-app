@@ -11,7 +11,7 @@ from utils.top_movie_appender import append_movie_to_frame
 
 # main window
 root = tk.Tk()
-root.geometry("300x500")
+root.geometry("500x500")
 root.title("Movies App")
 root.grid_columnconfigure(0, weight=1)
 root.grid_rowconfigure(0, weight=1)
