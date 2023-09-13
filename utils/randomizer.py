@@ -26,7 +26,8 @@ async def get_random_movie(img, lbl, btn):
         img.config(image=tk_image)
 
         lbl.config(
-            text=f'{response.json()["rating"]["imdb"]} ' + f'{response.json()["name"]}' + f' ({response.json()["year"]})')
+            text=f'{round(response.json()["rating"]["kp"], 2)} '
+                 + f'{response.json()["name"]}' + f' ({response.json()["year"]})')
 
     btn.config(state="normal")
     btn.config(text="Go")
